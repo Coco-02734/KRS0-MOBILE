@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtkhs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tambah Data KHS"
+            android:textColor="@color/biru"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:id="@+id/txtkode"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Kode Matakuliah"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/formkode"
+            android:layout_below="@id/txtkode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/kode"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Masukan Kode Matkul"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtnama"
+            android:layout_below="@id/formkode"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:text="Nama Matakuliah"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/fromnama"
+            android:layout_below="@id/txtnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nama Matakuliah"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtsks"
+            android:layout_below="@id/fromnama"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:text="SKS"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/fromsks"
+            android:layout_below="@id/txtsks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sks"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Jumlah SKS"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtna"
+            android:layout_below="@id/fromsks"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:text="Nilai Angka"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/formna"
+            android:layout_below="@id/txtna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/na"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nilai Angka"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtnh"
+            android:layout_below="@id/formna"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:text="Nilai Huruf"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/formnh"
+            android:layout_below="@id/txtnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nh"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nilai Angka"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtpre"
+            android:layout_below="@id/formnh"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:text="Predikat"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/forpred"
+            android:layout_below="@id/txtpre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/formplus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/predikat"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#fff"
+            android:layout_below="@id/forpred"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/bg_btn"/>
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

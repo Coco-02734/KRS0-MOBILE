@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtdinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="UDINUS"
+            android:textColor="@color/putih"
+            android:textSize="36sp" />
+        <TextView
+        android:id="@+id/txtmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:layout_toRightOf="@id/txtdinus"
+        android:text=" Mobile"
+        android:textColor="@color/putih"
+        android:textSize="36sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel1">
+        <TextView
+            android:id="@+id/txtnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="18dp"
+            android:text="Hallo Nico Fernades ! \n Sialhkan klik masuk untuk cek KRS"
+            android:textColor="@color/putih"
+            android:gravity="center"
+            android:textSize="24sp" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel2">
+            <Button
+                android:id="@+id/btn_masuk"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Masuk"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_btn"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="By A22.2019.02734"
+        android:textColor="@color/putih"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>
